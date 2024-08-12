@@ -1,0 +1,6 @@
+
+MOV R1,#81
+MOV R2, R1, LSL #15
+ADD R3, R1, R1, LSL #2
+ADD R4,R2,R3
+

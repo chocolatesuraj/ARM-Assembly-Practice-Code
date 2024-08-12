@@ -1,0 +1,10 @@
+    LDR R0,=A
+    LDR R1,[R0]
+    MOVS R1,R1,LSL #1
+BCS L1
+    B L2
+L1: MOV R2,#1
+L2: SWI 0X011
+
+.DATA
+A: .WORD 0X90ABCDEF
